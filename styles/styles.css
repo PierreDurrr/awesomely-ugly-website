@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: rgb(255, 179, 0);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    overflow-y: hidden;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9090C5;
+    background-color: #F18C6F;
+    width: 100%;
+    height: 10rem;
+}
+
+.wrapper {
+    position: relative;
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.first-div {
+    background: url(https://images.unsplash.com/photo-1634118928862-a4b2be94a03e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80) no-repeat;
+    background-size: cover;
+}
+
+.second-div {
+    background: url(https://images.unsplash.com/photo-1630859213948-8fd7babd8dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) no-repeat;
+    background-size: cover;
+}
+
+.third-div {
+    background: url(https://smoothsailingcarclub.files.wordpress.com/2012/02/tumblr_lybv1bhjjo1rneby2o1_1280.jpg) no-repeat;
+    background-size: cover;
+}
+
+.second-div > p {
+    animation: marquee-two 9s linear infinite;
+}
+
+.third-div > p {
+    animation: marquee-three 10s linear infinite;
+}
+
+@keyframes marquee-three {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes marquee-two {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+.stat-section {
+    height: 100vh;
+}
+
+nav {
+    overflow-x: hidden;
+    top: 0;
+    position: sticky;
+    transition: 0.5s;
+    height: 8rem;
+    width: 100%;
+    z-index: 20;
+}
+
+.nav-front,
+.nav-back {
+    top: 0;
+    text-align: center;
+    font-size: 5rem;
+    margin: 0;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    background-color: #83D6C9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+h1 > strong {
+    color: #bada55;
+}
+
+nav:hover .nav-front {
+    transform: translateX(-100%);
+}
+
+nav:hover .nav-back {
+    transform: rotateX(0deg);
+}
+
+.nav-front {
+    transform: rotateX(0deg);
+}
+
+.nav-back {
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateX(100%);
+}
+
+nav li,
+li>a {
+    font-size: 5rem;
+    text-decoration: none;
+    list-style: a;
+    color: #F18C6F;
+}
+
+p {
+    font-size: 3rem;
+}
