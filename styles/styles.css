@@ -15,7 +15,6 @@ body {
 }
 
 footer {
-    overflow-y: hidden;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -82,9 +81,6 @@ footer {
     }
 }
 
-.stat-section {
-    height: 100vh;
-}
 
 nav {
     overflow-x: hidden;
@@ -150,4 +146,53 @@ li>a {
 
 p {
     font-size: 3rem;
+}
+
+.stat-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.stat-section > img {
+    float: left;
+}
+
+.programmer-ipsum {
+    font-size: 0.5rem;
+    word-wrap: normal;
+}
+
+.alignment-chart {
+    margin: 1rem;
+    background-color: rgb(124, 0, 0);
+    width: 50%;
+}
+
+td {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 3rem;
+}
+
+.big-text {
+    position: relative;
+    top: 80%;
+    left: 10%;
+}
+
+h2 {
+    font-size: 2rem;
 }
