@@ -64,17 +64,17 @@ body {
 }
 
 .first-div {
-    background: url(https://images.unsplash.com/photo-1634118928862-a4b2be94a03e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80) no-repeat;
+    background: url(https://i.pinimg.com/originals/8b/83/33/8b8333c4d3e62e52d3de814d90e8679c.jpg) no-repeat;
     background-size: cover;
 }
 
 .second-div {
-    background: url(https://images.unsplash.com/photo-1630859213948-8fd7babd8dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) no-repeat;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/5/5a/2002-05_Pontiac_Aztek.jpg) no-repeat;
     background-size: cover;
 }
 
 .third-div {
-    background: url(https://smoothsailingcarclub.files.wordpress.com/2012/02/tumblr_lybv1bhjjo1rneby2o1_1280.jpg) no-repeat;
+    background: url(https://www.thepoke.co.uk/wp-content/uploads/2021/07/ugly-12.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -176,22 +176,27 @@ p {
 
 .stat-section {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+    display: block;
+    /* flex-direction: column;
+    overflow-x: hidden; */
     overflow-y: auto;
     padding: 2rem;
+    background-image: url(https://helios-i.mashable.com/imagery/articles/03R7jCrfQMVqqevsByvQ2TC/hero-image.fill.size_1248x702.v1626257746.jpg);
 }
 
 
 .stat-section>img {
+    padding: 0 20px 20px 0;
     float: left;
+    top: 0;
+    left: 0;
 }
 
 .programmer-ipsum {
-    font-size: 1.5rem;
-    word-wrap: normal;
-    position: absolute;
+    width: 50%;
+    font-size: 1rem;
+    float: right;
+    /* position: relative; */
 }
 
 .alignment-chart {
@@ -221,6 +226,7 @@ tr {
 }
 
 h2 {
+    float: right;
     font-size: 2rem;
     margin-bottom: 5rem;
 }
