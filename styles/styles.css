@@ -79,7 +79,7 @@ body {
 }
 
 .second-div>p {
-    animation: marquee-two 9s linear infinite;
+    animation: marquee-two 30s linear infinite;
 }
 
 .third-div>p {
