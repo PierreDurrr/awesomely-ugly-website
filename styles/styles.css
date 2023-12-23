@@ -83,7 +83,7 @@ body {
 }
 
 .third-div>p {
-    animation: marquee-three 10s linear infinite;
+    animation: marquee-three 30s linear infinite;
 }
 
 @keyframes marquee-three {
